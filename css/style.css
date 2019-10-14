@@ -18,32 +18,31 @@ body {
 }
 
 .tab {
-	list-style-type: none;
 	display: flex;
 	justify-content: center;
 }
 
-.tab li {
-	padding: 10px;
+.tab-nav {
+	padding: 10px 20px;
 }
 
-.tab li a {
+.tab-link {
 	text-decoration: none;
 	color: #232323;
 	padding: 5px 25px;
 	transition: .2s ease-out;
 }
 
-.tab li a:hover {
+.tab-link:hover {
 	color: #999999;
 }
 
-.tab .tab-active {
+.tab-link-active {
 	background-color: #434343;
 	color: #FFF;
 }
 
-.tab .tab-active:hover {
+.tab-link-active:hover {
 	background-color: #999999;
 	color: #FFF;
 }

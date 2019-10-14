@@ -1,3 +1,62 @@
 @charset "UTF-8";
 /* CSS Document */
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #232323;
+}
+
+.container {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.tab {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+}
+
+.tab li {
+	padding: 10px;
+}
+
+.tab li a {
+	text-decoration: none;
+	color: #232323;
+	padding: 5px 25px;
+	transition: .2s ease-out;
+}
+
+.tab li a:hover {
+	color: #999999;
+}
+
+.tab .tab-active {
+	background-color: #434343;
+	color: #FFF;
+}
+
+.tab .tab-active:hover {
+	background-color: #999999;
+	color: #FFF;
+}
+
+.tab-content {
+	text-align: center;
+}
+
+.tab-panel {
+	display: none;
+	padding: 25px;
+}
+
+.tab-panel-active {
+	display: block;
+}

@@ -22,6 +22,31 @@ body {
 	justify-content: center;
 }
 
+.relative {
+	position: relative;
+}
+
+.float{
+   	position: absolute;
+   	left:120px;
+	top: 5px;
+   	transition: all .4s ease-out;
+	height: 29px;
+	width: 90.5px;
+	background-color: #464646;
+	z-index: -1;
+}
+
+.float-photos {
+	transform: translateX(131px);
+	width: 95.3px;
+}
+
+.float-videos {
+	transform: translateX(266px);
+	width: 93.98px;
+}
+
 .tab-nav {
 	padding: 10px 20px;
 }
@@ -38,12 +63,10 @@ body {
 }
 
 .tab-link-active {
-	background-color: #434343;
 	color: #FFF;
 }
 
 .tab-link-active:hover {
-	background-color: #999999;
 	color: #FFF;
 }
 

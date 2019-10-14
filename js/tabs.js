@@ -15,10 +15,20 @@ function tabClick(trigger) {
 	if (trigger.target.className == "tab-link") {
 		trigger.target.className += " tab-link-active";
 		document.getElementById(trigger.target.href.split("#")[1]).className += " tab-panel-active";
+		
 	}else if (trigger.target.className !== "tab-link") {
 		trigger.target.querySelector(".tab-link").className += " tab-link-active";
 		document.getElementById(trigger.target.querySelector(".tab-link").href.split("#")[1]).className += " tab-panel-active";
 	}
+	
+	if (document.getElementById("tab-photos") == document.getElementsByClassName("tab-panel-active")[0]) {
+		document.getElementsByClassName("float")[0].className = "float float-photos";
+	}else if (document.getElementById("tab-home") == document.getElementsByClassName("tab-panel-active")[0]) {
+		document.getElementsByClassName("float")[0].className = "float";
+	}else if (document.getElementById("tab-videos") == document.getElementsByClassName("tab-panel-active")[0]) {
+		document.getElementsByClassName("float")[0].className = "float float-videos";
+	}
+	
 	
 }
 
